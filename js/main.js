@@ -3,31 +3,31 @@ $(document).ready(function () {
 	$('.slick-gallery').slick({
 		dots: true,
 		arrows: true,
-		speed: 300,
+		speed: 400,
 		infinite: true,
-		autoplay: true,
+		// autoplay: true,
 		autoplaySpeed: 4000,
-		slidesToShow: 4,
+		// slidesToShow: 4,
 		slidesToScroll: 1,
-		adaptiveHeight: true,
+		mobileFirst: true,
 
 		responsive: [
 			{
 				breakpoint: 1200,
 				settings: {
+					slidesToShow: 4,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
 					slidesToShow: 3,
 				}
 			},
 			{
-				breakpoint: 780,
+				breakpoint: 575,
 				settings: {
 					slidesToShow: 2,
-				}
-			},
-			{
-				breakpoint: 560,
-				settings: {
-					slidesToShow: 1,
 				}
 			}
 		]

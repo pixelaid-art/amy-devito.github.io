@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
@@ -566,6 +573,7 @@
   background: #ff0066;
   background: -webkit-gradient(left top, right top, color-stop(0%, #ff0066), color-stop(100%, #ffde00));
   background: -webkit-gradient(linear, left top, right top, from(#ff0066), to(#ffde00));
+  background: -o-linear-gradient(left, #ff0066 0%, #ffde00 100%);
   background: linear-gradient(to right, #ff0066 0%, #ffde00 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0066', endColorstr='#ffde00', GradientType=1 );
 }
@@ -643,6 +651,7 @@ body {
   background: #2b2d2c;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #2b2d2c), color-stop(100%, black));
   background: -webkit-gradient(linear, left top, left bottom, from(#2b2d2c), to(black));
+  background: -o-linear-gradient(top, #2b2d2c 0%, black 100%);
   background: linear-gradient(to bottom, #2b2d2c 0%, black 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2d2c', endColorstr='#000000', GradientType=0 );
 }
@@ -651,6 +660,7 @@ a {
   text-decoration: none;
   font-size: calc(15px + 4 * ((100vw - 320px) / 880));
   -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 
@@ -737,11 +747,13 @@ p {
 
 .contacts__social-icon {
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .contacts__social-icon:hover {
   -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+          -ms-transform: translateY(-3px);
+      transform: translateY(-3px);
 }
 .contacts__social-icon a {
   display: block;
@@ -810,6 +822,7 @@ p {
   z-index: -1;
   opacity: 0;
   -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
   transition: all 0.7s;
 }
 .main-menu a:hover {
@@ -838,6 +851,7 @@ p {
   height: auto;
   display: block;
   -webkit-transition: opacity 0.7s;
+  -o-transition: opacity 0.7s;
   transition: opacity 0.7s;
 }
 .logo img:hover {
@@ -870,6 +884,7 @@ p {
   padding: 12px 0 15px;
   top: -48px;
   -webkit-transition: top 1.3s;
+  -o-transition: top 1.3s;
   transition: top 1.3s;
 }
 .header .logo-fixed {
@@ -882,6 +897,7 @@ p {
 }
 .header__title {
   background: -webkit-gradient(linear, left top, right top, from(red), color-stop(orange), color-stop(yellow), color-stop(green), color-stop(cyan), color-stop(blue), to(violet));
+  background: -o-linear-gradient(left, red, orange, yellow, green, cyan, blue, violet);
   background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
   background-size: 400% 400%;
   -webkit-background-clip: text;
@@ -919,6 +935,7 @@ p {
   font-size: calc(20px + 4 * ((100vw - 320px) / 880));
   color: #fff;
   -webkit-transition: text-shadow 0.3s;
+  -o-transition: text-shadow 0.3s;
   transition: text-shadow 0.3s;
   white-space: nowrap;
 }
@@ -1013,6 +1030,7 @@ p {
 }
 .gallery__card img {
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 15px;
   width: 100%;
@@ -1025,7 +1043,8 @@ p {
 }
 .gallery__card img:hover {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+          -ms-transform: scale(1.05);
+      transform: scale(1.05);
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
@@ -1223,13 +1242,16 @@ p {
   top: 20px;
   right: 20px;
   -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+      transform: rotate(135deg);
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .accordion__arrow_active {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
 }
 .accordion__content {
   font-size: calc(15px + 2 * ((100vw - 320px) / 880));
@@ -1335,12 +1357,15 @@ p {
   cursor: pointer;
   -webkit-transition-property: opacity, -webkit-filter;
   transition-property: opacity, -webkit-filter;
+  -o-transition-property: opacity, filter;
   transition-property: opacity, filter;
   transition-property: opacity, filter, -webkit-filter;
   -webkit-transition-duration: 0.15s;
-          transition-duration: 0.15s;
+          -o-transition-duration: 0.15s;
+     transition-duration: 0.15s;
   -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+          -o-transition-timing-function: linear;
+     transition-timing-function: linear;
   font: inherit;
   color: inherit;
   text-transform: none;
@@ -1387,12 +1412,15 @@ p {
   position: absolute;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 0.15s;
-          transition-duration: 0.15s;
+          -o-transition-duration: 0.15s;
+     transition-duration: 0.15s;
   -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
+          -o-transition-timing-function: ease;
+     transition-timing-function: ease;
 }
 
 .hamburger-inner::before,
@@ -1417,6 +1445,7 @@ p {
 .hamburger--3dy .hamburger-inner {
   -webkit-transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -1425,6 +1454,7 @@ p {
 .hamburger--3dy .hamburger-inner::after {
   -webkit-transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -1510,9 +1540,11 @@ p {
     width: 100vw;
     height: 100vh;
     -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
+            -ms-transform: translateX(-100vw);
+        transform: translateX(-100vw);
     -webkit-transition: -webkit-transform 0.7s;
     transition: -webkit-transform 0.7s;
+    -o-transition: transform 0.7s;
     transition: transform 0.7s;
     transition: transform 0.7s, -webkit-transform 0.7s;
   }
@@ -1529,7 +1561,8 @@ p {
 
   .header__menu.collapse {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+            -ms-transform: translateX(0);
+        transform: translateX(0);
   }
 
   .main-menu_header li:not(:last-child) {
@@ -1657,5 +1690,3 @@ p {
     margin: auto;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+// @keyframes colored-text {
+// 	13% {
+// 		color: red;
+// 	}
+// 	26% {
+// 		color: orange;
+// 	}
+// 	39% {
+// 		color: yellow;
+// 	}
+// 	52% {
+// 		color: green;
+// 	}
+// 	66% {
+// 		color: #00bfff;
+// 	}
+// 	78% {
+// 		color: blue;
+// 	}
+// 	100% {
+// 		color: #800080;
+// 	}
+// }
+
+@-webkit-keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}

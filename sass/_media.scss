@@ -1,0 +1,157 @@
+@media (max-width: 1199px) {
+	.footer__contacts {
+		align-items: flex-end;
+	}
+	.main-menu_footer ul {
+		justify-content: start;
+	}
+}
+
+@media (max-width: 991px) {
+	.logo:before {
+		background: none;
+	}
+	.logo img:hover {
+		opacity: 1;
+	}
+	.main-menu_header li:not(:last-child) {
+		margin-right: 10px;
+	}
+	.main-menu a {
+		padding: 0 8px;
+	}
+	// bg-sise
+	.about:before,
+	.gallery-maslo:before,
+	.gallery-pastel:before,
+	.gallery-karandash:before,
+	.gallery-rospis:before,
+	.faq:before {
+		background-size: contain;
+	}
+	.gallery-maslo:before {
+		background-position: 0 170px;
+	}
+	.contacts__social-icon a {
+		width: 23px;
+		height: 23px;
+	}
+	.advantages__row {
+		padding: 40px 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.hamburger {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.header__menu {
+		position: absolute;
+		z-index: 1001;
+		background: #2b2d2c;
+		width: 100vw;
+		height: 100vh;
+		transform: translateX(-100vw);
+		transition: transform 0.7s;
+		.main-menu_header {
+			padding: 30px 15px;
+			li {
+				margin: 0 10px;
+			}
+			li a {
+				display: block;
+				padding: 7px 0;
+			}
+		}
+	}
+	.header__menu.collapse {
+		transform: translateX(0);
+	}
+	.main-menu_header li:not(:last-child) {
+		margin: 0 10px;
+	}
+	.main-menu a:hover:before {
+		display: none;
+	}
+	.logo_header {
+		max-width: 200px;
+		margin: 10px auto;
+	}
+	.logo img {
+		margin: auto;
+	}
+	.header__info {
+		align-items: center;
+	}
+	.main-menu_header ul {
+		margin-right: 0;
+		flex-direction: column;
+	}
+	.main-menu_header a {
+		font-size: 18px;
+	}
+	.contacts_header {
+		justify-content: center;
+	}
+	.header__title {
+		text-align: center;
+		margin: 10px 0;
+	}
+	.about:before {
+		background-size: cover;
+	}
+	.footer__row {
+		justify-content: center;
+	}
+	.footer__contacts {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	.main-menu_footer ul {
+		justify-content: center;
+	}
+	.footer__title {
+		width: 100%;
+		text-align: center;
+	}
+	.logo_footer {
+		margin: 10px auto;
+	}
+	.phone_footer,
+	.contacts_footer {
+		margin: 7px 20px;
+	}
+}
+
+@media (max-width: 575px) {
+	.gallery__item {
+		margin: 20px;
+	}
+	.gallery__more-title {
+		width: 100%;
+		text-align: center;
+		margin-right: 0;
+	}
+	.contacts_gallery {
+		justify-content: center;
+	}
+	.advantages__row {
+		padding: 0;
+	}
+	.advantages__1:before,
+	.advantages__2:before,
+	.advantages__3:before {
+		background-size: contain;
+	}
+	.advantages__img {
+		min-height: 152px;
+	}
+	.portraits__img img {
+		max-width: 88%;
+		margin: auto;
+	}
+}

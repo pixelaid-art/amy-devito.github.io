@@ -2,19 +2,24 @@ function getHeaderHeight() {
 	let headerHeight = $('.header').innerHeight();
 	return headerHeight;
 }
+
 let headerHeight;
-// Анимация при скролле
-if (window.matchMedia('(min-width: 992px)').matches) {
-	new WOW().init();
-}	
+
+// Фиксированное меню
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 290) {
+		$('.header').addClass('fixed');
+		$('.banner').css({ 'margin-top': headerHeight });
+	} else {
+		$('.header').removeClass('fixed');
+		$('.banner').css({ 'margin-top': '0' })
+	}
+});
 
 $(document).ready(function () {
-	if ($(".header").not('.fixed')) {
+	$(window).resize(function () {
 		headerHeight = getHeaderHeight();
-		$(window).resize(function () {
-			headerHeight = getHeaderHeight();
-		});
-	}	
+	});
 
 	// Slick slider
 	$('.slick-gallery').slick({
@@ -59,6 +64,11 @@ $(document).ready(function () {
 		$('a[data-fancybox="' + $(this).attr("data-trigger") + '"]').first().trigger('click');
 	});
 
+	// Анимация при скролле
+	if (window.matchMedia('(min-width: 768px)').matches) {
+		new WOW().init();
+	}	
+
 	// Аккордеон
 	$('.inner').hide();// Hide all tabs
 	$('.toggle').click(function (j) {
@@ -97,17 +107,6 @@ $(document).ready(function () {
 		$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 300);
 		e.preventDefault();
 	});
-
-	// Фиксированное меню
-	// $(window).scroll(function () {
-	// 	if ($(this).scrollTop() > 300) {
-	// 		$('.header').addClass('fixed');
-	// 		$('.banner').css({ 'margin-top': headerHeight });
-	// 	} else {
-	// 		$('.header').removeClass('fixed');
-	// 		$('.banner').css({ 'margin-top': '0' })
-	// 	}
-	// });
 
 	// Мобильное меню
 	$('.hamburger').click(function () {

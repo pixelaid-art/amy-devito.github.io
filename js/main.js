@@ -99,7 +99,6 @@ $(document).ready(function () {
 	});
 
 	// Фиксированное меню
-	var headerHeight = $('.header').innerHeight();
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 190) {
 			$('.header').addClass('fixed');
@@ -121,14 +120,4 @@ $(document).ready(function () {
 		$('.header__menu').removeClass('collapse');
 	});
 
-});
-// Фиксированное меню
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 290) {
-		$('.header').addClass('fixed');
-		$('.banner').css({ 'margin-top': headerHeight });
-	} else {
-		$('.header').removeClass('fixed');
-		$('.banner').css({ 'margin-top': '0' })
-	}
 });

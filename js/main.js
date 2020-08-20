@@ -99,6 +99,18 @@ $(document).ready(function () {
 		e.preventDefault();
 	});
 
+	// Фиксированное меню
+	var headerHeight = $('.header').innerHeight();
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 190) {
+			$('.header').addClass('fixed');
+			$('.banner').css({ 'margin-top': headerHeight });
+		} else {
+			$('.header').removeClass('fixed');
+			$('.banner').css({ 'margin-top': '0' })
+		}
+	});
+
 	// Мобильное меню
 	$('.hamburger').click(function () {
 		$('.hamburger').toggleClass('is-active');

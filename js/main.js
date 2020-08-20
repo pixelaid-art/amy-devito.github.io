@@ -9,13 +9,24 @@ let headerHeight;
 $(document).ready(function () {
 	if ($('.header').not('.fixed')) {
 		headerHeight = getHeaderHeight();
-	}	
-	$(window).resize(function () {
-		if ($('.header').not('.fixed')) {
-			$('.header').removeClass('fixed');
-			headerHeight = getHeaderHeight();
-		}
-	});
+	}
+
+	if ($(window).width() < 767) {
+		window.addEventListener("orientationchange", function (event) {
+			if ($('.header').hasClass('.fixed')) {
+				$('.header').removeClass('fixed');
+				headerHeight = getHeaderHeight();
+			}
+		});
+	} else {
+		$(window).resize(function () {
+			if ($('.header').not('.fixed')) {
+				$('.header').removeClass('fixed');
+				headerHeight = getHeaderHeight();
+			}
+		});
+	}
+
 	// Фиксированное меню
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 290) {
@@ -73,7 +84,7 @@ $(document).ready(function () {
 	// Анимация при скролле
 	if (window.matchMedia('(min-width: 768px)').matches) {
 		new WOW().init();
-	}	
+	}
 
 	// Аккордеон
 	$('.inner').hide();// Hide all tabs

@@ -3,6 +3,10 @@ function getHeaderHeight() {
 	return headerHeight;
 }
 let headerHeight;
+// Анимация при скролле
+if (window.matchMedia('(min-width: 992px)').matches) {
+	new WOW().init();
+}	
 
 $(document).ready(function () {
 	if ($(".header").not('.fixed')) {
@@ -54,11 +58,6 @@ $(document).ready(function () {
 		event.preventDefault();
 		$('a[data-fancybox="' + $(this).attr("data-trigger") + '"]').first().trigger('click');
 	});
-
-	// Анимация при скролле
-	if (window.matchMedia('(min-width: 768px)').matches) {
-		new WOW().init();
-	}	
 
 	// Аккордеон
 	$('.inner').hide();// Hide all tabs

@@ -11,7 +11,6 @@ $(document).ready(function () {
 		headerHeight = getHeaderHeight();
 	}	
 	$(window).resize(function () {
-		alert('Изменен размер окна');
 		if ($('.header').not('.fixed')) {
 			$('.header').removeClass('fixed');
 			headerHeight = getHeaderHeight();

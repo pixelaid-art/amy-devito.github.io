@@ -1,24 +1,30 @@
+// Функция для фиксированного меню
 function getHeaderHeight() {
 	let headerHeight = $('.header').innerHeight();
 	return headerHeight;
 }
-
+// Высота Header
 let headerHeight;
 
-// Фиксированное меню
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 290) {
-		$('.header').addClass('fixed');
-		$('.banner').css({ 'margin-top': headerHeight });
-	} else {
-		$('.header').removeClass('fixed');
-		$('.banner').css({ 'margin-top': '0' })
-	}
-});
-
 $(document).ready(function () {
-	$(window).resize(function () {
+	if ($('.header').not('.fixed')) {
 		headerHeight = getHeaderHeight();
+	}	
+	$(window).resize(function () {
+		if ($('.header').not('.fixed')) {
+			$('.header').removeClass('fixed');
+			headerHeight = getHeaderHeight();
+		}
+	});
+	// Фиксированное меню
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 290) {
+			$('.header').addClass('fixed');
+			$('.banner').css({ 'margin-top': headerHeight });
+		} else {
+			$('.header').removeClass('fixed');
+			$('.banner').css({ 'margin-top': '0' })
+		}
 	});
 
 	// Slick slider
@@ -112,8 +118,8 @@ $(document).ready(function () {
 	$('.hamburger').click(function () {
 		$('.hamburger').toggleClass('is-active');
 		$('.header__menu').toggleClass('collapse');
-
 	});
+	// Действия при клике на Hamburger-Button
 	$('.main-menu_header a').click(function () {
 		$('.hamburger').removeClass('is-active');
 		$('.header__menu').removeClass('collapse');

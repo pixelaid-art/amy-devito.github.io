@@ -100,7 +100,7 @@ $(document).ready(function () {
 
 	// Фиксированное меню
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 190) {
+		if ($(this).scrollTop() > 300) {
 			$('.header').addClass('fixed');
 			$('.banner').css({ 'margin-top': headerHeight });
 		} else {

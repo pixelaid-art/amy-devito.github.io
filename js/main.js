@@ -99,15 +99,15 @@ $(document).ready(function () {
 	});
 
 	// Фиксированное меню
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 300) {
-			$('.header').addClass('fixed');
-			$('.banner').css({ 'margin-top': headerHeight });
-		} else {
-			$('.header').removeClass('fixed');
-			$('.banner').css({ 'margin-top': '0' })
-		}
-	});
+	// $(window).scroll(function () {
+	// 	if ($(this).scrollTop() > 300) {
+	// 		$('.header').addClass('fixed');
+	// 		$('.banner').css({ 'margin-top': headerHeight });
+	// 	} else {
+	// 		$('.header').removeClass('fixed');
+	// 		$('.banner').css({ 'margin-top': '0' })
+	// 	}
+	// });
 
 	// Мобильное меню
 	$('.hamburger').click(function () {

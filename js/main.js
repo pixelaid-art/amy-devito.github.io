@@ -14,7 +14,7 @@ $(document).ready(function () {
 	if ($(window).width() < 768) {
 		watchScroll();
 		window.addEventListener("orientationchange", function (event) {
-			if (($(window).width() < 768) & ($('.header').not('.fixed'))) {
+			if (($(window).width() > 767) & ($('.header').not('.fixed'))) {
 				$('.header').removeClass('fixed');
 				headerHeight = getHeaderHeight();
 				watchScroll();

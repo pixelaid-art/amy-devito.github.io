@@ -1007,7 +1007,7 @@ p {
 }
 .about__wrapper {
   border-radius: 20px;
-  padding: 13px 0;
+  padding: 13px 15px;
 }
 .about__avatar {
   z-index: 3;

@@ -11,14 +11,15 @@ $(document).ready(function () {
 		headerHeight = getHeaderHeight();
 	}
 
-	if ($(window).width() < 767) {
-		// watchScroll();
-		// window.addEventListener("orientationchange", function (event) {
-		// 	if ($('.header').not('.fixed')) {
-		// 		$('.header').removeClass('fixed');
-		// 		headerHeight = getHeaderHeight();
-		// 	}
-		// });
+	if ($(window).width() < 768) {
+		watchScroll();
+		window.addEventListener("orientationchange", function (event) {
+			if (($(window).width() < 768) & ($('.header').not('.fixed'))) {
+				$('.header').removeClass('fixed');
+				headerHeight = getHeaderHeight();
+				watchScroll();
+			}
+		});
 	} else {
 		watchScroll();
 		$(window).resize(function () {

@@ -36,12 +36,6 @@ $(document).ready(function () {
 				$('.banner').css({ 'margin-top': '0' })
 			}
 		});
-		$(window).resize(function () {
-			if ($('.header').not('.fixed')) {
-				$('.header').removeClass('fixed');
-				headerHeight = getHeaderHeight();
-			}
-		});
 	}
 
 	// Slick slider

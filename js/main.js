@@ -19,6 +19,13 @@ $(document).ready(function () {
 				$('.top-mobile-string').removeClass('fixed');
 			}
 		});
+		$(window).scroll(function () {
+			if ($(this).scrollTop() < 150) {
+				$('.top-mobile-string').hide();
+			} else {
+				$('.top-mobile-string').show();
+			}
+		});
 	} else {
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 250) {

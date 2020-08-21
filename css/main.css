@@ -1366,6 +1366,7 @@ p {
 
 .hamburger {
   position: absolute;
+  z-index: 1001;
   top: -3px;
   right: 0;
   padding: 15px 15px;

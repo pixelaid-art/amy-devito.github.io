@@ -402,7 +402,6 @@ p {
 	top: 0;
 }
 .top-mobile-string.fixed {
-	
 	&:before {
 		@extend %botton-gradient-line;
 	}
@@ -901,6 +900,7 @@ p {
 
 .hamburger {
 	position: absolute;
+	z-index: 1001;
 	top: -3px;
 	right: 0;
 	padding: 15px 15px;

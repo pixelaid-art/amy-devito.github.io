@@ -12,33 +12,27 @@ $(document).ready(function () {
 	}
 
 	if ($(window).width() < 768) {
-		watchScroll();
-		window.addEventListener("orientationchange", function (event) {
-			if (($(window).width() > 767) & ($('.header').not('.fixed'))) {
-				$('.header').removeClass('fixed');
-				headerHeight = getHeaderHeight();
-				watchScroll();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 300) {
+				$('.top-mobile-string').addClass('fixed');
+			} else {
+				$('.top-mobile-string').removeClass('fixed');
 			}
 		});
 	} else {
-		watchScroll();
-		$(window).resize(function () {
-			if ($('.header').not('.fixed')) {
-				$('.header').removeClass('fixed');
-				headerHeight = getHeaderHeight();
-			}
-		});
-	}
-
-	// Функция Фиксированное меню
-	function watchScroll() {
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 290) {
+			if ($(this).scrollTop() > 250) {
 				$('.header').addClass('fixed');
 				$('.banner').css({ 'margin-top': headerHeight });
 			} else {
 				$('.header').removeClass('fixed');
 				$('.banner').css({ 'margin-top': '0' })
+			}
+		});
+		$(window).resize(function () {
+			if ($('.header').not('.fixed')) {
+				$('.header').removeClass('fixed');
+				headerHeight = getHeaderHeight();
 			}
 		});
 	}

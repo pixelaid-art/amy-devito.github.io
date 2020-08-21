@@ -42,18 +42,17 @@
 }
 
 @media (min-width: 768px) {
-	.hamburger {
+	.hamburger,
+	.top-mobile-string {
 		display: none;
 	}
 }
 
 @media (max-width: 767px) {
-	// .header {
-	// 	height: 245px;
-	// }
 	.header__menu {
-		position: absolute;
-		z-index: 1001;
+		position: fixed;
+		top: 0;
+		z-index: 999;
 		background: #2b2d2c;
 		width: 100vw;
 		height: 100vh;
@@ -61,6 +60,7 @@
 		transition: transform 0.7s;
 		.main-menu_header {
 			padding: 30px 15px;
+			    margin-top: 25px;
 			li {
 				margin: 0 10px;
 			}

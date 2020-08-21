@@ -752,6 +752,10 @@ p {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
+.contacts__social-icon:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 .contacts__social-icon a {
   display: block;
   width: 29px;
@@ -1003,6 +1007,7 @@ p {
 }
 .about__wrapper {
   border-radius: 20px;
+  padding: 13px 0;
 }
 .about__avatar {
   z-index: 3;

@@ -195,6 +195,9 @@ p {
 		&:hover {
 			transform: translateY(-3px);
 		}
+		&:active {
+			transform: translateY(0);
+		}
 		a {
 			display: block;
 			width: 29px;
@@ -474,6 +477,7 @@ p {
 
 	&__wrapper {
 		border-radius: 20px;
+		padding: 13px 0;
 	}
 
 	&__avatar {

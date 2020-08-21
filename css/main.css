@@ -938,6 +938,12 @@ p {
   z-index: 1000;
   top: 0;
 }
+.top-mobile-string.fixed .row,
+.header.fixed .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 .header.fixed {
   padding: 10px 0;

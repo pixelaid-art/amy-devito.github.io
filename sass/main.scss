@@ -400,6 +400,9 @@ p {
 	position: fixed;
 	z-index: 1000;
 	top: 0;
+	.row {
+		align-items: center;
+	}
 }
 .top-mobile-string.fixed {
 	&:before {

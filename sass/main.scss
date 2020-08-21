@@ -743,10 +743,10 @@ p {
 	}
 
 	&__link {
+		@include adaptiv-font(19, 17);
 		display: block;
 		padding: 13px 50px 13px 15px;
 		background: #3b0f7a59;
-		// background: rgba(59, 15, 122, 0.5);
 		border-radius: 10px;
 		color: #fff;
 		&:hover {

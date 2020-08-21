@@ -1241,6 +1241,7 @@ p {
   margin-bottom: 2.5rem;
 }
 .accordion__link {
+  font-size: calc(17px + 2 * ((100vw - 320px) / 880));
   display: block;
   padding: 13px 50px 13px 15px;
   background: #3b0f7a59;

@@ -132,12 +132,15 @@
 
 @media (max-width: 575px) {
 	.gallery__item {
-		margin: 20px;
+		margin: 2px;
 	}
 	.gallery__more-title {
 		width: 100%;
 		text-align: center;
 		margin-right: 0;
+	}
+	.gallery__card picture {
+		height: 350px;
 	}
 	.contacts_gallery {
 		justify-content: center;

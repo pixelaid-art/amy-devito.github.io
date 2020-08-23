@@ -156,7 +156,9 @@ h4 {
 	z-index: 20;
 	@extend %pos-relative;
 }
-
+h5 {
+	@include adaptiv-font(27, 16);
+}
 p {
 	margin: 25px 0;
 	line-height: 1.8;
@@ -539,6 +541,9 @@ p {
 	&__card {
 		@extend %pos-relative;
 		border-radius: 15px;
+		picture {
+			height: 320px;
+		}
 		img {
 			transition: all 0.3s;
 			border-radius: 15px;
@@ -548,7 +553,7 @@ p {
 			object-fit: cover;
 			object-position: center;
 			&:hover {
-				transform: scale(1.05);
+				transform: scale(1.03);
 				cursor: zoom-in;
 			}
 		}
@@ -650,7 +655,6 @@ p {
 /* Слайд */
 .slick-slide {
 	margin: 15px;
-	height: 310px;
 }
 /* Слайд активный (показывается) */
 .slick-slide.slick-active {
@@ -827,7 +831,6 @@ p {
 	}
 
 	&__text {
-		@include adaptiv-font(27, 16);
 		@extend %text-center;
 		font-style: italic;
 	}

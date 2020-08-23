@@ -705,6 +705,10 @@ h4 {
   z-index: 20;
 }
 
+h5 {
+  font-size: calc(16px + 11 * ((100vw - 320px) / 880));
+}
+
 p {
   margin: 25px 0;
   line-height: 1.8;
@@ -1059,6 +1063,9 @@ p {
 .gallery__card {
   border-radius: 15px;
 }
+.gallery__card picture {
+  height: 320px;
+}
 .gallery__card img {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -1072,8 +1079,8 @@ p {
      object-position: center;
 }
 .gallery__card img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
@@ -1159,7 +1166,6 @@ p {
 /* Слайд */
 .slick-slide {
   margin: 15px;
-  height: 310px;
 }
 
 /* Слайд активный (показывается) */
@@ -1319,7 +1325,6 @@ p {
   background: #fff;
 }
 .advantages__text {
-  font-size: calc(16px + 11 * ((100vw - 320px) / 880));
   font-style: italic;
 }
 .advantages__1:before {
@@ -1676,13 +1681,17 @@ p {
 }
 @media (max-width: 575px) {
   .gallery__item {
-    margin: 20px;
+    margin: 2px;
   }
 
   .gallery__more-title {
     width: 100%;
     text-align: center;
     margin-right: 0;
+  }
+
+  .gallery__card picture {
+    height: 350px;
   }
 
   .contacts_gallery {

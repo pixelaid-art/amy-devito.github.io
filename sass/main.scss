@@ -410,6 +410,7 @@ p {
 	}
 }
 .top-mobile-string.fixed {
+	display: flex;
 	&:before {
 		@extend %botton-gradient-line;
 	}

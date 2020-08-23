@@ -953,6 +953,12 @@ p {
           align-items: center;
 }
 
+.top-mobile-string.fixed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header.fixed {
   padding: 10px 0;
   height: 48px;
@@ -1557,7 +1563,7 @@ p {
 @media (min-width: 768px) {
   .hamburger,
   .top-mobile-string {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 767px) {

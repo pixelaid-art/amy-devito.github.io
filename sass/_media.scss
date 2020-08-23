@@ -44,7 +44,7 @@
 @media (min-width: 768px) {
 	.hamburger,
 	.top-mobile-string {
-		display: none;
+		display: none !important;
 	}
 }
 

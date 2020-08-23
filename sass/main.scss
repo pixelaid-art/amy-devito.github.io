@@ -452,15 +452,17 @@ p {
 	}
 }
 .banner {
-	background: url(../img/banner.png) no-repeat top center;
-	background-size: cover;
-	min-height: 773px;
+	@extend %pos-relative;
 	&__title {
+		position: absolute;
+		top: 10%;
+		right: 10%;
+		line-height: 1;
 		@include adaptiv-font(60, 30);
 		font-family: "Marck Script", cursive;
 		margin-left: auto;
 		max-width: 45%;
-		color: #ffffff;
+		color: #d75033;
 		text-shadow: -1px 1px 1px rgba(2, 2, 2, 1);
 	}
 }

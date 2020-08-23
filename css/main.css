@@ -578,7 +578,7 @@ h2, h3, h4, .gallery__title, .advantages__text {
   font-weight: bold;
 }
 
-h4, .main-menu a, .logo, .logo picture, .phone, .about, .grounded-radiants, .gallery, .gallery__card, .portraits, .faq, .accordion, .accordion__card, .advantages__1, .advantages__2, .advantages__3, .footer {
+h4, .main-menu a, .logo, .logo picture, .phone, .banner, .about, .grounded-radiants, .gallery, .gallery__card, .portraits, .faq, .accordion, .accordion__card, .advantages__1, .advantages__2, .advantages__3, .footer {
   position: relative;
 }
 
@@ -984,17 +984,16 @@ p {
   margin: 12px 0 8px;
 }
 
-.banner {
-  background: url(../img/banner.png) no-repeat top center;
-  background-size: cover;
-  min-height: 773px;
-}
 .banner__title {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  line-height: 1;
   font-size: calc(30px + 30 * ((100vw - 320px) / 880));
   font-family: "Marck Script", cursive;
   margin-left: auto;
   max-width: 45%;
-  color: #ffffff;
+  color: #d75033;
   text-shadow: -1px 1px 1px #020202;
 }
 

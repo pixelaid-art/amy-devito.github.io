@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<!-- CSS -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- FancyBox -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+	<link rel="stylesheet" href="css/main.css">
+	<title>Художественная роспись стен в Брянске</title>
+</head>
+<body>
+	<!-- Fixed Mobile Line -->
+	<div class="top-mobile-string">
+		<a class="logo-fixed top-mobile-string__logo" href="index.html">
+			<img src="img/logo-fixed.png" alt="Iren-Art.ru">
+		</a>
+		<!-- Hamberger Button -->
+		<button class="hamburger hamburger--3dy top-mobile-string__button" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+	</div>
+
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<!-- Logo -->
+				<div class="col-lg-3 col-md-2">
+					<a href="index.html" class="logo logo_header">
+						<picture>
+							<source media="(min-width: 768px) and (max-width: 900px)" srcset="img/logo-small-screen.png">
+							<img src="img/logo.png" alt="Iren-Art.ru">
+						</picture>
+					</a>
+					<a class="logo-fixed" href="index.html">
+						<img src="img/logo-fixed.png" alt="Iren-Art.ru">
+					</a>
+				</div>
+				<div class="header__info d-flex col-lg-9 col-md-10">
+					<h1 class="header__title">Художник-дизайнер Платонова Ирина</h1>
+					<div class="contacts contacts_header d-flex">
+						<a href="tel:+79003745125" class="phone phone_header nowrap">+7 900 374 5125</a>
+						<div class="header__messengers d-flex">
+							<div class="contacts__social-icon">
+								<a class="contacts__whatsapp-icon" href="https://api.whatsapp.com/send?phone=79003745125&text=" title="WhatsApp"></a>
+							</div>
+							<div class="contacts__social-icon">
+								<a class="contacts__viber-icon" href="viber://forward?text=+79003745125" title="Viber"></a>
+							</div>
+							<div class="contacts__social-icon">
+								<a class="contacts__vk-icon" href="https://vk.me/irenartbryansk" target="_blank" title="ВКонтакте"></a>
+							</div>
+							<div class="contacts__social-icon">
+								<a class="contacts__facebook-icon" href="https://m.facebook.com/platonovairen" target="_blank" title="Facebook"></a>
+							</div>
+							<div class="contacts__social-icon">
+								<a class="contacts__ok-icon" href="https://ok.ru/p.irospisstenvbryanske" target="_blank" title="Одноклассники"></a>
+							</div>
+						</div>
+					</div>
+					<div class="header__menu">
+						<nav class="main-menu main-menu_header">
+							<ul class="d-flex">
+								<li class="main-menu__link"><a href="#about">Обо мне</a></li>
+								<li class="main-menu__link"><a href="#galereya">Галерея</a></li>
+								<li class="main-menu__link"><a href="index.html">Портреты</a></li>
+								<li class="main-menu__link"><a href="#rospis">Роспись стен</a></li>
+								<li class="main-menu__link"><a href="#faq">FAQ</a></li>
+								<li class="main-menu__link"><a href="">Отзывы</a></li>
+								<li class="main-menu__link">
+									<a class="call-price" href="javascript:;" data-trigger="prices">Цены</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- Hamberger Button -->
+				<button class="hamburger hamburger--3dy" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Div Banner -->
+	<div class="banner">
+		<picture>
+			<source type="image/webp" srcset="img/banner.png">
+			<source media="(max-width:767px)" srcset="img/banner_min.png">
+			<img src="img/banner.png" alt="Дарите яркие эмоции">
+		</picture>
+		<div class="container">
+			<h4 class="banner__title">Дарите яркие эмоции!</h4>
+		</div>
+	</div>
+
+	<!-- Article About -->
+	<article class="about content-block wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+		<div id="about" class="container about__wrapper grounded-radiants">
+			<div class="row about__row">
+				<div class="about__avatar col-9 col-md-5 col-lg-6 wow animate__animated animate__bounceInLeft" data-wow-delay="0.7s">
+					<picture>
+						<source type="image/webp" srcset="img/ava.webp">
+						<img src="img/ava.png" alt="avatar">
+					</picture>
+				</div>
+				<div class="about__text col animate__animated wow animate__bounceInRight" data-wow-delay="1.4s">
+					<h6 class="about__title">Привет!</h6>
+					<div class="about__info">
+						<p>Меня зовут Ирина.</p>
+						<p>
+							Профессиональный художник, рисую с 2003 года.<br>
+							Занимаюсь художественной росписью стен на заказ.
+							<span class="about__marked-text">
+								Художественная роспись стен - это максимальная детализация изображения. Благодаря работе с кистями
+								можно прорисовать мелкие детали.
+							</span>
+							Работаю безвредными, не имеющими запаха, моющимися акриловыми красками в помещении.
+							На улице - специальными красками,устойчивыми к атмосферным осадкам и выгоранию.
+						</p>
+						<p>
+							Рисую только кистями по технологии, проверенной веками!
+							Каждая роспись уникальна, и ее невозможно повторить!
+							Я создаю целый мир на ваших квадратных метрах!
+						</p>
+						<p>
+							Я выезжаю на обьект росписи, где оговариваются все условия, потом приступаю к работе.
+						</p>
+						<p>
+							Цены, а также условия работы оговариваются по телефону, 
+							или же на объекте росписи индивидуально.
+						</p>
+						<p>
+							С удовольствием отвечу на все ваши вопросы!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<!-- Article Gallery -->
+	<article class="gallery wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+		<h2 id="galereya" class="gallery__title">Галерея выполненных работ</h2>
+		<div class="gallery__contacts d-flex">
+			<div class="contacts contacts_gallery d-flex">
+				<span class="gallery__more-title">Больше работ тут:</span>
+				<div class="contacts__social-icon">
+					<a class="contacts__vk-icon" href="https://vk.com/irenart32" target="_blank" title="VKontakte"></a>
+				</div>
+				<div class="contacts__social-icon">
+					<a class="contacts__facebook-icon" href="https://m.facebook.com/platonovairen" target="_blank"
+						title="Facebook"></a>
+				</div>
+				<div class="contacts__social-icon">
+					<a class="contacts__instagram-icon" href="https://instagram.com/irenart32?igshid=eds92tgf0ux8" target="_blank"
+						title="Instagram"></a>
+				</div>
+				<div class="contacts__social-icon">
+					<a class="contacts__ok-icon" href="https://ok.ru/p.irospisstenvbryanske" target="_blank"
+						title="Одноклассники"></a>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Section Gallery Rospis -->
+		<section class="gallery gallery-rospis">
+			<div class="container content-block wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+				<h3 id="rospis" class="wow animate__animated animate__fadeInDown" data-wow-delay="0.9s">Художественная роспись стен в Брянске</h3>
+				<p>
+					Художественная роспись универсальна. В зависимости от выбранного сюжета рисунка можно создать удивительную, уникальную
+					атмосферу в помещении или на улице. Все работы выполняются вручную, по индивидуальным эскизам, а благодаря работе с кистями можно прорисовать даже мелкие детали. Все рисунки являются высокопрофессиональной авторской работой.<br>
+					На этапе создания эскиза я учитываю пожелания владельца помещения по стилю и цветовым решениям, а также планировку
+					комнаты и расположение рисунка на стене.
+				</p>
+				<div class="slick-gallery gallery__item">
+					<div class="gallery__card">
+						<a href="img/gallery/rospis/rospis_sten-1.jpg" data-fancybox="gallery">
+							<picture>
+								<source type="image/webp" srcset="img/gallery/rospis/rospis_thumbs/rospis_thumb-1.webp">
+								<img src="img/gallery/rospis/rospis_thumbs/rospis_thumb-1.jpg" alt="Художественная роспись стен">
+							</picture>
+							</a>
+					</div>
+					<div class="gallery__card">
+						<a href="img/gallery/rospis/rospis_sten-2.jpg" data-fancybox="gallery">
+						<picture>
+							<source type="image/webp" srcset="img/gallery/rospis/rospis_thumbs/rospis_thumb-2.webp">
+							<img src="img/gallery/rospis/rospis_thumbs/rospis_thumb-2.jpg" alt="Художественная роспись стен">
+						</picture>
+						</a>
+					</div>
+					<div class="gallery__card">
+						<a href="img/gallery/rospis/rospis_sten-3.jpg" data-fancybox="gallery">
+						<picture>
+							<source type="image/webp" srcset="img/gallery/rospis/rospis_thumbs/rospis_thumb-3.webp">
+							<img src="img/gallery/rospis/rospis_thumbs/rospis_thumb-3.jpg" alt="Художественная роспись стен">
+						</picture>
+						</a>
+					</div>
+					<div class="gallery__card">
+						<a href="img/gallery/rospis/rospis_sten-4.jpg" data-fancybox="gallery">
+						<picture>
+							<source type="image/webp" srcset="img/gallery/rospis/rospis_thumbs/rospis_thumb-4.webp">
+							<img src="img/gallery/rospis/rospis_thumbs/rospis_thumb-4.jpg" alt="Художественная роспись стен">
+						</picture>
+						</a>
+					</div>
+					<div class="gallery__card">
+						<a href="img/gallery/rospis/rospis_sten-5.jpg" data-fancybox="gallery">
+						<picture>
+							<source type="image/webp" srcset="img/gallery/rospis/rospis_thumbs/rospis_thumb-5.webp">
+							<img src="img/gallery/rospis/rospis_thumbs/rospis_thumb-5.jpg" alt="Художественная роспись стен">
+						</picture>
+						</a>
+					</div>
+					<div class="gallery__card">
+						<a href="img/gallery/rospis/rospis_sten-6.jpg" data-fancybox="gallery">
+						<picture>
+							<source type="image/webp" srcset="img/gallery/rospis/rospis_thumbs/rospis_thumb-6.webp">
+							<img src="img/gallery/rospis/rospis_thumbs/rospis_thumb-6.jpg" alt="Художественная роспись стен">
+						</picture>
+						</a>
+					</div>
+					<div class="gallery__card">
+						<a href="img/gallery/rospis/rospis_sten-7.jpg" data-fancybox="gallery">
+						<picture>
+							<source type="image/webp" srcset="img/gallery/rospis/rospis_thumbs/rospis_thumb-7.webp">
+							<img src="img/gallery/rospis/rospis_thumbs/rospis_thumb-7.jpg" alt="Художественная роспись стен">
+						</picture>
+						</a>
+					</div>
+					<div class="gallery__card">
+						<a href="img/gallery/rospis/rospis_sten-8.jpg" data-fancybox="gallery">
+						<picture>
+							<source type="image/webp" srcset="img/gallery/rospis/rospis_thumbs/rospis_thumb-8.webp">
+							<img src="img/gallery/rospis/rospis_thumbs/rospis_thumb-8.jpg" alt="Художественная роспись стен">
+						</picture>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+
+	<!-- Article Advantages -->
+	<div class="advantages content-block">
+		<!-- Item-1 -->
+		<section class="advantages__1">
+			<div class="container">
+				<div class="row advantages__row">
+					<div
+						class="col-sm-3 col-4 advantages__item advantages__img advantages__img-1 wow animate__animated animate__fadeInLeftBig"
+						data-wow-delay="0.4s"></div>
+					<div class="col-sm-5 col-3 advantages__item advantages__line wow animate__animated animate__fadeInLeftBig"
+						data-wow-delay="0.5s"></div>
+					<div class="col-sm-4 col-5 advantages__item advantages__text wow animate__animated animate__backInRight"
+						data-wow-delay="0.7s">
+						<h5>Гибкое <br>ценообразование</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Item-2 -->
+		<section class="advantages__2">
+			<div class="container">
+				<div class="row advantages__row">
+					<div class="col-sm-4 col-5 advantages__item advantages__text wow animate__animated animate__backInLeft"
+						data-wow-delay="0.7s">
+						<h5>Максимальная детализация<br> изображения</h5>
+					</div>
+					<div class="col-sm-5 col-3 advantages__item advantages__line wow animate__animated animate__fadeInRightBig"
+						data-wow-delay="0.5s"></div>
+					<div
+						class="col-sm-3 col-4 advantages__item advantages__img advantages__img-2 wow animate__animated animate__fadeInRightBig"
+						data-wow-delay="0.4s"></div>
+				</div>
+			</div>
+		</section>
+		<!-- Item-3 -->
+		<section class="advantages__3">
+			<div class="container">
+				<div class="row advantages__row">
+					<div
+						class="col-sm-3 col-4 advantages__item advantages__img advantages__img-3_1 wow animate__animated animate__fadeInLeftBig"
+						data-wow-delay="0.4s"></div>
+					<div class="col-sm-5 col-3 advantages__item advantages__line wow animate__animated animate__fadeInLeftBig"
+						data-wow-delay="0.5s"></div>
+					<div class="col-sm-4 col-5 advantages__item advantages__text wow animate__animated animate__backInRight"
+						data-wow-delay="0.7s">
+						<h5>Экологичные, <br>качественные материалы</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+	</div>
+
+	<!-- Article FAQ -->
+	<article id="faq" class="faq">
+		<div class="container content-block grounded-radiants_faq grounded-radiants">
+			<h3>Часто задаваемые вопросы (FAQ)</h3>
+			<ul class="accordion">
+				<!-- Item-1 -->
+				<li class="accordion__card">
+					<a class="toggle accordion__link" href=#>Сколько будет стоить художественная роспись стен?<span class="accordion__arrow"></span></a>
+					<div class="accordion__content inner">
+						<p>
+							Цена в помещении - от 500 рублей квадратный метр.<br>
+							На улице - от 300 рублей квадратный метр.<br>
+							Дополнительная информация по телефону.
+						</p>
+					</div>
+				</li>
+				<!-- Item-2 -->
+				<li class="accordion__card">
+					<a class="toggle accordion__link" href=#>Сколько времени занимает художественная роспись стен?<span class="accordion__arrow"></span></a>
+					<div class="accordion__content inner">
+						<p>
+							От недели до месяца.<br>
+							Все зависит от вида росписи, сложности и размера, а также условий работы.
+						</p>
+					</div>
+				</li>
+				<!-- Item-3 -->
+				<li class="accordion__card">
+					<a class="toggle accordion__link" href=#>Какими красками выполняется художественная роспись стен?<span
+							class="accordion__arrow"></span></a>
+					<div class="accordion__content inner">
+						<p>
+							В помещении я работаю акриловыми красками - они не имеют запаха, безвредны для детей и взрослых.<br>
+							Также роспись можно покрыть акриловым лаком, что увеличивает срок службы покрытия.<br>
+							На улице - специальными красками. Они не боятся солнца и атмосферных осадков, долговечны и не выцветают.<br>
+							На все краски имеется гарантия.
+						</p>
+					</div>
+				</li>
+				<!-- Item-4 -->
+				<li class="accordion__card">
+					<a class="toggle accordion__link" href=#>Как подготовить стену под художественную роспись стен?<span
+							class="accordion__arrow"></span></a>
+					<div class="accordion__content inner">
+						<p>
+							Подготовка стены для интерьерной росписи.
+						</p>
+						<p>
+							Подготовка основания перед нанесением краски является важным этапом работ. От его качества зависит последующий срок
+							службы настенного шедевра, а также передача цвета и принцип нанесения красок. Как и любая подготовительная работа, она
+							состоит из нескольких этапов.
+							<ol class="accordion__list accordion__list_decimal">
+								<li>Очистить стену от старого покрытия, штукатурки, убрать все лишние элементы (гвозди, рельефы). Заделать щели и неровности, при необходимости использовать армирующую сетку.</li>
+								<li>Обезжирить поверхность специальным щелочным раствором. Нанести выравнивающую штукатурку, устранить шероховатости после полного высыхания и прогрунтовать.</li>
+								<li>Наложить небольшой слой финишной шпатлевки.</li>
+								<li>После высыхания зачистить от дефектов до гладкого состояния и прогрунтовать. После этого можно наносить шедевр.</li>
+							</ol>
+							<p>Перед нанесением рисунка стоит подготовить стену
+							Если все сделано по правилам, рисунок будет радовать глаз очень долго.</p>
+						</p>
+					</div>
+				</li>
+				<!-- Item-5 -->
+				<li class="accordion__card">
+					<a class="toggle accordion__link" href=#>Как я работаю?<span
+							class="accordion__arrow"></span></a>
+					<div class="accordion__content inner">
+						<ol class="accordion__list accordion__list_decimal">
+							<li>Я выезжаю на объект росписи, где оговариваются все условия работы и цена.</li>
+							<li>Предлагаю эскизы и варианты, либо вы говорите мне какую роспись вы хотите.</li>
+							<li>Мы утверждаем эскиз.</li>
+							<li>Вы вносите предоплату.</li>
+							<li>Я приступаю к работе.</li>
+						</ol>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</article>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row footer__row">
+				<!-- Footer Navigation -->
+				<div class="col-md-4">
+					<nav class="main-menu main-menu_footer">
+						<ul class="d-flex">
+							<li class="main-menu__link"><a href="#about">Обо мне</a></li>
+							<li class="main-menu__link"><a href="#galereya">Галерея</a></li>
+							<li class="main-menu__link"><a href="index.html">Портреты</a></li>
+							<li class="main-menu__link"><a href="#rospis">Роспись стен</a></li>
+							<li class="main-menu__link"><a href="#faq">FAQ</a></li>
+							<li class="main-menu__link"><a href="">Отзывы</a></li>
+							<li class="main-menu__link">
+								<a class="call-price" href="javascript:;" data-trigger="prices">Цены</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- Footer Logo -->
+				<div class="col-md-4">
+					<a href="index.html" class="logo logo_footer">
+						<picture>
+							<source media="(max-width: 767px)" srcset="img/logo-small-screen_media.png">
+							<img src="img/logo.png" alt="Iren-Art.ru">
+						</picture>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<div class="footer__contacts d-flex">
+						<p class="footer__title">Художник-дизайнер <span class="nowrap">Платонова Ирина</span></p>
+						<a href="tel:+79003745125" class="phone phone_footer nowrap">+7 900 374 5125</a>
+						<div class="contacts contacts_footer d-flex">
+							<div class="contacts__social-icon">
+								<a class="contacts__whatsapp-icon" href="https://api.whatsapp.com/send?phone=79003745125&text=" title="WhatsApp"></a>
+							</div>
+							<div class="contacts__social-icon">
+								<a class="contacts__viber-icon" href="viber://forward?text=+79003745125" title="Viber"></a>
+							</div>
+							<div class="contacts__social-icon">
+								<a class="contacts__vk-icon" href="https://vk.com/irenartbryansk" target="_blank" title="VKontakte"></a>
+							</div>
+							<div class="contacts__social-icon">
+								<a class="contacts__facebook-icon" href="https://m.facebook.com/platonovairen" target="_blank" title="Facebook"></a>
+							</div>
+							<div class="contacts__social-icon">
+								<a class="contacts__instagram-icon" href="https://instagram.com/irenart32?igshid=eds92tgf0ux8" target="_blank" title="Instagram"></a>
+							</div>
+							<div class="contacts__social-icon">
+								<a class="contacts__ok-icon" href="https://ok.ru/p.irospisstenvbryanske" target="_blank" title="Одноклассники"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="copyright">
+				© 2020 IREN-ART.RU<br> Портреты и картины на заказ, художественная роспись стен, г. Брянск.
+			</p>
+		</div>
+	</footer>
+
+	<!-- Prices Block -->
+	<div class="hidden">
+		<a href="img/price-4.jpg" data-fancybox="prices"></a>
+	</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<!-- FancyBox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

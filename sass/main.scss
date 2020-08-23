@@ -500,6 +500,11 @@ p {
 		z-index: 10;
 	}
 
+	&__marked-text {
+		display: block;
+		margin: 15px 0;
+		font-style: italic;
+	}
 	&__title {
 		@include adaptiv-font(60, 34);
 	}
@@ -625,6 +630,7 @@ p {
 .faq {
 	@extend %pos-relative;
 	margin-top: 40px;
+	margin-bottom: 30px;
 	&:before {
 		@extend %pseudo-full-size;
 		background: url(../img/colors/faq.png) no-repeat 43% 70px;
@@ -802,6 +808,9 @@ p {
 			@include adaptiv-font(18, 15);
 			margin-bottom: 0.6rem;
 		}
+		&_decimal li {
+			list-style: decimal inside;
+		}
 	}
 }
 
@@ -825,6 +834,9 @@ p {
 		}
 		&-3 {
 			background: url(../img/icons/advantages-3.png) no-repeat center center;
+		}
+		&-3_1 {
+			background: url(../img/icons/advantages-3_1.png) no-repeat center center;
 		}
 	}
 

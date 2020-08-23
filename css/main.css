@@ -1034,6 +1034,11 @@ p {
 .about__text {
   z-index: 10;
 }
+.about__marked-text {
+  display: block;
+  margin: 15px 0;
+  font-style: italic;
+}
 .about__title {
   font-size: calc(34px + 26 * ((100vw - 320px) / 880));
 }
@@ -1140,6 +1145,7 @@ p {
 
 .faq {
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 .faq:before {
   background: url(../img/colors/faq.png) no-repeat 43% 70px;
@@ -1310,6 +1316,9 @@ p {
   font-size: calc(15px + 3 * ((100vw - 320px) / 880));
   margin-bottom: 0.6rem;
 }
+.accordion__list_decimal li {
+  list-style: decimal inside;
+}
 
 .advantages__row {
   padding: 60px 0;
@@ -1326,6 +1335,9 @@ p {
 }
 .advantages__img-3 {
   background: url(../img/icons/advantages-3.png) no-repeat center center;
+}
+.advantages__img-3_1 {
+  background: url(../img/icons/advantages-3_1.png) no-repeat center center;
 }
 .advantages__line {
   height: 1px;

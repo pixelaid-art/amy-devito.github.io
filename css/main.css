@@ -984,6 +984,9 @@ p {
   margin: 12px 0 8px;
 }
 
+.banner {
+  min-height: 125px;
+}
 .banner__title {
   position: absolute;
   top: 10%;

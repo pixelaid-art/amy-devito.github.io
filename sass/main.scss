@@ -453,6 +453,7 @@ p {
 }
 .banner {
 	@extend %pos-relative;
+	min-height: 125px;
 	&__title {
 		position: absolute;
 		top: 10%;

@@ -85,6 +85,7 @@ html {
 }
 
 body {
+	content-visibility: auto;
 	font-size: 1rem;
 	font-family: "Kameron", serif;
 	color: #fff;
@@ -438,14 +439,14 @@ p {
 	min-height: 125px;
 	&__title {
 		position: absolute;
-		top: 10%;
+		top: 15%;
 		right: 10%;
 		line-height: 1;
 		@include adaptiv-font(60, 30);
 		font-family: "Marck Script", cursive;
 		margin-left: auto;
 		max-width: 45%;
-		color: #d75033;
+		color: #efd320;
 		text-shadow: -1px 1px 1px rgba(2, 2, 2, 1);
 	}
 }

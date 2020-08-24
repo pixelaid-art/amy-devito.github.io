@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap");
-@import "grid";
+@import "reset.scss";
+@import "grid.scss";
+@import "slick-slider.scss";
 @import "animation.scss";
+@import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap&family=Marck+Script&display=swap&family=Roboto+Slab:wght@800&display=swap");
 @-ms-viewport {
 	width: device-width;
 }
@@ -26,9 +26,6 @@ $maxWidth: 1200;
 	background: -ms-linear-gradient(left, rgba(255, 0, 102, 1) 0%, rgba(255, 222, 0, 1) 100%);
 	background: linear-gradient(to right, rgba(255, 0, 102, 1) 0%, rgba(255, 222, 0, 1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0066', endColorstr='#ffde00', GradientType=1 );
-}
-%br-5 {
-	border-radius: 5px;
 }
 %text-center {
 	text-align: center;
@@ -57,13 +54,10 @@ $maxWidth: 1200;
 %jc-between {
 	justify-content: space-between;
 }
-%jc-end {
-	justify-content: flex-end;
-}
 %ai-center {
 	align-items: center;
 }
-%botton-gradient-line {
+%bottom-gradient-line {
 	@extend %pseudo;
 	@extend %theme-gradient;
 	bottom: 0;
@@ -112,7 +106,7 @@ body {
 }
 a {
 	text-decoration: none;
-	@include adaptiv-font(19, 15);
+	@include adaptiv-font(19, 17);
 	transition: color 0.3s;
 }
 a:not([class]) {
@@ -169,12 +163,6 @@ p {
 	white-space: nowrap;
 }
 
-.wrapper {
-	width: 1230px;
-	max-width: 100%;
-	margin: 0 auto;
-	padding: 0 15px;
-}
 .content-block {
 	padding-top: 2rem;
 	padding-bottom: 3.2rem;
@@ -242,7 +230,7 @@ p {
 		}
 	}
 	&_gallery {
-		align-items: center;
+		@extend %ai-center;
 		a {
 			margin: 8px;
 			width: 32px;
@@ -341,8 +329,7 @@ p {
 }
 
 .header {
-	display: flex;
-	align-items: center;
+	@extend %ai-center;
 	.logo-fixed {
 		display: none;
 	}
@@ -362,32 +349,27 @@ p {
 		-webkit-text-fill-color: transparent;
 		animation: rainbow 20s ease infinite;
 	}
-
 	&__messengers {
 	}
-
 	&__menu {
 	}
 }
 .top-mobile-string {
-	display: flex;
+	@extend %jc-between;
 	background: #2b2d2c;
 	height: 42px;
 	position: absolute;
 	top: -42px;
 	transition: top 1.3s;
-	justify-content: space-between;
-	align-items: center;
+	@extend %ai-center;
 	padding: 5px 15px;
 	&__logo {
 	}
-
 	&__button {
 	}
 	.logo-fixed {
 	}
 	.hamburger {
-		display: flex;
 		position: static;
 		padding: 0;
 	}
@@ -406,13 +388,13 @@ p {
 	z-index: 1000;
 	top: 0;
 	.row {
-		align-items: center;
+		@extend %ai-center;
 	}
 }
 .top-mobile-string.fixed {
 	display: flex;
 	&:before {
-		@extend %botton-gradient-line;
+		@extend %bottom-gradient-line;
 	}
 }
 
@@ -428,7 +410,7 @@ p {
 		display: block;
 	}
 	&:before {
-		@extend %botton-gradient-line;
+		@extend %bottom-gradient-line;
 	}
 }
 
@@ -438,7 +420,6 @@ p {
 	color: #fff;
 	transition: text-shadow 0.3s;
 	@extend %pos-relative;
-	white-space: nowrap;
 	&:hover {
 		text-shadow: 0 0 2px rgba(202, 228, 225, 0.92), 0 0 10px rgba(202, 228, 225, 0.34),
 			0 0 4px rgba(30, 132, 242, 0.52), 0 0 7px rgba(30, 132, 242, 0.92), 0 0 11px rgba(30, 132, 242, 0.78),
@@ -543,10 +524,8 @@ p {
 		@extend %text-center;
 		padding: 0 15px;
 	}
-
 	&__item {
 	}
-
 	&__card {
 		@extend %pos-relative;
 		border-radius: 15px;
@@ -569,7 +548,7 @@ p {
 	}
 	&__more-title {
 		@include adaptiv-font(22, 18);
-		font-weight: 800;
+		@extend %bold-text;
 		margin-right: 18px;
 	}
 	&__contacts {
@@ -643,105 +622,11 @@ p {
 	}
 }
 
-/* Слайдер */
-.slick-slider {
-	padding: 0 20px;
-}
-/* Слайдер запущен */
-.slick-slider.slick-initialized {
-}
-/* Слайдер с точками */
-.slick-slider.slick-dotted {
-}
-/* Ограничивающая оболочка */
-.slick-list {
-	overflow: hidden;
-	position: relative;
-}
-/* Лента слайдов */
-.slick-track {
-	display: flex;
-}
-/* Слайд */
-.slick-slide {
-	margin: 15px;
-}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active {
-}
-/* Слайд основной */
-.slick-slide.slick-current {
-}
-/* Слайд по центру */
-.slick-slide.slick-center {
-}
-/* Клонированный слайд */
-.slick-slide.slick-cloned {
-}
-/* Стрелка */
-.slick-arrow {
-	position: absolute;
-	top: 50%;
-	font-size: 0;
-	z-index: 20;
-	width: 18px;
-	height: 30px;
-	cursor: pointer;
-	border: none;
-	&:hover {
-		opacity: 0.9;
-	}
-}
-/* Стрелка влево */
-.slick-arrow.slick-prev {
-	left: 0;
-	background: url(../img/icons/arrow-prew.png) no-repeat center center;
-}
-/* Стрелка вправо */
-.slick-arrow.slick-next {
-	right: 0;
-	background: url(../img/icons/arrow-next.png) no-repeat center center;
-}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {
-}
-/* Точки (булиты) */
-.slick-dots {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
-.slick-dots li {
-	margin: 0 10px;
-}
-/* Активная точка */
-.slick-dots li.slick-active button {
-	background: transparent;
-	border: solid 1px #ffdd00ad;
-	background: #ff384c;
-	height: 9px;
-	width: 9px;
-}
-/* Элемент точки */
-.slick-dots li button {
-	font-size: 0;
-	height: 5px;
-	width: 5px;
-	background: #ff384c;
-	border-radius: 50%;
-	cursor: pointer;
-	border: none;
-}
-
 .portraits {
 	&__text {
 	}
-
 	&__images {
-		// margin: 2rem 0;
 	}
-
 	&__img {
 		text-align: center;
 		margin: 15px auto;
@@ -761,7 +646,6 @@ p {
 		margin-bottom: 2.5rem;
 		@extend %pos-relative;
 	}
-
 	&__link {
 		@include adaptiv-font(19, 17);
 		display: block;
@@ -773,7 +657,6 @@ p {
 			color: #fff57e;
 		}
 	}
-
 	&__arrow {
 		display: block;
 		border-top: 2px solid #fff;
@@ -789,7 +672,6 @@ p {
 			transform: rotate(-45deg);
 		}
 	}
-
 	&__content {
 		@include adaptiv-font(17, 15);
 		padding: 15px;
@@ -801,7 +683,6 @@ p {
 			}
 		}
 	}
-
 	&__list {
 		li {
 			list-style: square inside;
@@ -819,10 +700,8 @@ p {
 		@extend %ai-center;
 		padding: 60px 0;
 	}
-
 	&__item {
 	}
-
 	&__img {
 		min-height: 245px;
 		background-size: 83% !important;
@@ -839,13 +718,11 @@ p {
 			background: url(../img/icons/advantages-3_1.png) no-repeat center center;
 		}
 	}
-
 	&__line {
 		height: 1px;
 		width: 80%;
 		background: #fff;
 	}
-
 	&__text {
 		@extend %text-center;
 		font-style: italic;
@@ -899,13 +776,10 @@ p {
 	&__row {
 		@extend %ai-center;
 	}
-
 	&__nav {
 	}
-
 	&__logo {
 	}
-
 	&__title {
 		margin: 0;
 		color: #b5b5b5;
@@ -913,7 +787,7 @@ p {
 	}
 	&__contacts {
 		flex-direction: column-reverse;
-		align-items: center;
+		@extend %ai-center;
 	}
 }
 .copyright {

@@ -371,6 +371,7 @@ p {
 	.logo-fixed {
 	}
 	.hamburger {
+		display: flex;
 		position: static;
 		padding: 0;
 	}

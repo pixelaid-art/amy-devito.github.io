@@ -93,8 +93,12 @@
 	<div class="banner">
 		<picture>
 			<source type="image/webp" srcset="img/banner.webp">
-			<source media="(max-width:767px)" srcset="img/banner_min.png">
-			<img src="img/banner.png" alt="Дарите яркие эмоции">
+			<!-- <source media="(max-width:767px)" srcset="img/banner_min.png"> -->
+			<img sizes="(max-width: 1920px) 100vw, 1920px" srcset="
+			img/banner_gphbba_c_scale,w_320.png 320w,
+			img/banner_gphbba_c_scale,w_523.png 523w,
+			img/banner_gphbba_c_scale,w_691.png 691w,
+			img/banner_gphbba_c_scale,w_1920.png 1920w" src="img/banner_gphbba_c_scale,w_1920.png" alt="">
 		</picture>
 		<div class="container">
 			<h4 class="banner__title">Дарите яркие эмоции!</h4>

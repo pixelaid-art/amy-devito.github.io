@@ -93,12 +93,7 @@
 	<div class="banner">
 		<picture>
 			<source type="image/webp" srcset="img/banner.webp">
-			<!-- <source media="(max-width:767px)" srcset="img/banner_min.png"> -->
-			<img sizes="(max-width: 1920px) 100vw, 1920px" srcset="
-			img/banner_gphbba_c_scale,w_320.png 320w,
-			img/banner_gphbba_c_scale,w_523.png 523w,
-			img/banner_gphbba_c_scale,w_691.png 691w,
-			img/banner_gphbba_c_scale,w_1920.png 1920w" src="img/banner_gphbba_c_scale,w_1920.png" alt="">
+			<img class="lazy" data-src="img/banner.png" alt="Баннер">
 		</picture>
 		<div class="container">
 			<h4 class="banner__title">Дарите яркие эмоции!</h4>
@@ -112,7 +107,7 @@
 				<div class="about__avatar col-9 col-md-5 col-lg-6 wow animate__animated animate__bounceInLeft" data-wow-delay="0.7s">
 					<picture>
 						<source type="image/webp" srcset="img/ava.webp">
-						<img src="img/ava.png" alt="avatar">
+						<img class="lazy" data-src="img/ava.png" alt="avatar">
 					</picture>
 				</div>
 				<div class="about__text col animate__animated wow animate__bounceInRight" data-wow-delay="1.4s">
@@ -502,25 +497,25 @@
 				<div class="portraits__img col-12 col-sm-6 col-md-3">
 					<picture>
 						<source type="image/webp" srcset="img/customer-1.webp">
-						<img src="img/customer-1.jpg" loading="lazy" alt="Портрет на заказ">
+						<img class="lazy" data-src="img/customer-1.jpg" alt="Портрет на заказ">
 					</picture>
 				</div>
 				<div class="portraits__img col-12 col-sm-6 col-md-3">
 					<picture>
 						<source type="image/webp" srcset="img/customer-4.webp">
-						<img src="img/customer-4.jpg" loading="lazy" alt="Портрет на заказ">
+						<img class="lazy" data-src="img/customer-4.jpg" alt="Портрет на заказ">
 					</picture>
 				</div>
 				<div class="portraits__img col-12 col-sm-6 col-md-3">
 					<picture>
 						<source type="image/webp" srcset="img/customer-5.webp">
-						<img src="img/customer-5.jpg" loading="lazy" alt="Портрет на заказ">
+						<img class="lazy" data-src="img/customer-5.jpg" alt="Портрет на заказ">
 					</picture>
 				</div>
 				<div class="portraits__img col-12 col-sm-6 col-md-3">
 					<picture>
 						<source type="image/webp" srcset="img/customer-3.webp">
-						<img src="img/customer-3.jpg" loading="lazy" alt="Портрет на заказ">
+						<img class="lazy" data-src="img/customer-3.jpg" alt="Портрет на заказ">
 					</picture>
 				</div>
 			</div>
@@ -729,6 +724,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <!-- WOW JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+<script type="text/javascript"
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

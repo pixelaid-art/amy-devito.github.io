@@ -1,7 +1,3 @@
-// Lazy Load
-$(function () {
-	$('.lazy').Lazy();
-});
 // Функция для фиксированного меню
 function getHeaderHeight() {
 	let headerHeight = $('.header').innerHeight();

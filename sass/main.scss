@@ -109,6 +109,7 @@ a {
 	text-decoration: none;
 	@include adaptiv-font(19, 17);
 	transition: color 0.3s;
+	letter-spacing: 0.5px;
 }
 a:not([class]) {
 	color: #ff6464;
@@ -158,6 +159,7 @@ p {
 	margin: 25px 0;
 	line-height: 1.8;
 	@include adaptiv-font(19, 17);
+	letter-spacing: 0.5px;
 }
 
 .nowrap {
@@ -694,6 +696,7 @@ p {
 		}
 		&_decimal li {
 			list-style: decimal inside;
+			@include adaptiv-font(19, 17);
 		}
 	}
 }

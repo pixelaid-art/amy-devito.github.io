@@ -73,7 +73,7 @@ $(document).ready(function () {
 
 	// Fancybox
 	$('[data-fancybox="gallery"]').fancybox({
-		// Options will go here
+		autoCenter: true,
 	});
 	$('.call-price').click(function () {
 		event.preventDefault();

@@ -131,6 +131,9 @@
 }
 
 @media (max-width: 575px) {
+	.banner__title {
+		right: 0;
+	}
 	.gallery__item {
 		margin: 2px;
 	}

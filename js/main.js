@@ -44,9 +44,8 @@ $(document).ready(function () {
 		arrows: true,
 		speed: 400,
 		infinite: true,
-		// autoplay: true,
+		autoplay: true,
 		autoplaySpeed: 4000,
-		// slidesToShow: 4,
 		slidesToScroll: 1,
 		mobileFirst: true,
 

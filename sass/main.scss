@@ -91,7 +91,7 @@ body {
 	color: #fff;
 	letter-spacing: 0.4px;
 	min-height: 100vh;
-	background: rgba(43, 45, 44, 1);
+	background: rgba(43, 45, 44, 1.0);
 	background: -moz-linear-gradient(top, rgba(43, 45, 44, 1) 0%, rgba(0, 0, 0, 1) 100%);
 	background: -webkit-gradient(
 		left top,
@@ -639,7 +639,7 @@ p {
 }
 
 .marked-text {
-	color: #ff6464;
+	color: #ffc283;
 }
 .accordion {
 	z-index: 20;
@@ -652,11 +652,12 @@ p {
 		@include adaptiv-font(19, 17);
 		display: block;
 		padding: 13px 50px 13px 15px;
-		background: #3b0f7a59;
+		background: rgba(59, 15, 122, 0.35);
 		border-radius: 10px;
 		color: #fff;
+		transition: background 0.3s;
 		&:hover {
-			color: #fff57e;
+			background: rgba(59, 15, 122, 0.5);
 		}
 	}
 	&__arrow {
@@ -679,9 +680,9 @@ p {
 		padding: 15px;
 		background: rgba(0, 0, 0, 0.8);
 		a {
-			color: #ff6464;
+			color: #fff938;
 			&:hover {
-				color: #d80909;
+				color: #8eff46;
 			}
 		}
 	}

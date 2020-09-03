@@ -679,6 +679,7 @@ p {
 		@include adaptiv-font(17, 15);
 		padding: 15px;
 		background: rgba(0, 0, 0, 0.8);
+		border-radius: 0 0 10px 10px;
 		a {
 			color: #fff938;
 			&:hover {
@@ -697,6 +698,10 @@ p {
 			@include adaptiv-font(19, 17);
 		}
 	}
+}
+
+.accordion__link.active {
+	border-radius: 10px 10px 0 0;
 }
 
 .advantages {

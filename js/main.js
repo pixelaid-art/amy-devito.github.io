@@ -20,10 +20,10 @@ $(document).ready(function () {
 			}
 		});
 		$(window).scroll(function () {
-			if ($(this).scrollTop() < 150) {
-				$('.top-mobile-string').hide();
+			if ($(this).scrollTop() < 299) {
+				$('.top-mobile-string').css({ 'display': none });
 			} else {
-				$('.top-mobile-string').show();
+				$('.top-mobile-string').css({ 'display': flex });
 			}
 		});
 	} else {

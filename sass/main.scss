@@ -357,13 +357,14 @@ p {
 	}
 }
 .top-mobile-string {
+	width: 100%;
 	display: flex !important;
 	@extend %jc-between;
 	background: #2b2d2c;
 	height: 42px;
 	position: absolute;
 	top: -42px;
-	transition: top 1.3s;
+	transition: top 0.7s;
 	@extend %ai-center;
 	padding: 5px 15px;
 	&__logo {
@@ -397,6 +398,7 @@ p {
 }
 .top-mobile-string.fixed {
 	display: flex;
+	@extend %jc-between;
 	&:before {
 		@extend %bottom-gradient-line;
 	}

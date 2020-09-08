@@ -663,6 +663,12 @@
 		</div>
 	</article>
 
+	<!-- VK comments -->
+	<div id="vk_comments"></div>
+	<script type="text/javascript">
+		VK.Widgets.Comments("vk_comments", { limit: 5, width: "auto", attach: "*" });
+	</script>
+
 	<footer class="footer">
 		<div class="container">
 			<div class="row footer__row">
@@ -740,6 +746,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <!-- WOW JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?105"></script>
+
+<script type="text/javascript">
+	VK.init({ apiId: 3891034, onlyWidgets: true });
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>

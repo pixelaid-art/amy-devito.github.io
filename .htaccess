@@ -42,9 +42,14 @@
   #### Удаляем index.html из URL                                         ####
   ############################################################################
 
-  RewriteEngine On
-  RewriteRule ^index\.html$ / [R=301,L]
-  RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+  RewriteEngine on
+  RewriteBase /
+  RewriteCond %{THE_REQUEST} ^{3,9}\ /(<^.>+)\.html\ HTTP
+  RewriteRule ^(<^.>+)\.html$ iren-art.ru/$1 
+  RewriteCond %{REQUEST_URI} !(\.<^./>+)$
+  RewriteCond %{REQUEST_fileNAME} !-d
+  RewriteCond %{REQUEST_fileNAME} !-f
+  RewriteRule (.*) /$1.html
 
 ############################################################################
 #### Компрессия статического контента для гугл  спид тест               ####

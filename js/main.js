@@ -12,12 +12,6 @@ $(document).ready(function () {
 	}
 
 	if ($(window).width() < 768) {
-
-		// if ($(this).scrollTop() < 200) {
-		// 	$('.top-mobile-string').css({ 'display': none });
-		// } else {
-		// 	$('.top-mobile-string').css({ 'display': flex });
-		// }
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 300) {
 				$('.top-mobile-string').addClass('fixed');

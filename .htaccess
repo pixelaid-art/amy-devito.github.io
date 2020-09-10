@@ -123,4 +123,4 @@
 
  </IfModule>
 
- ErrorDocument 404 https://iren-art.ru/404/404.html
+ ErrorDocument 404 404/404.html

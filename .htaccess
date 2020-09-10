@@ -124,3 +124,7 @@
  </IfModule>
 
  ErrorDocument 404 404.html
+
+ Options +FollowSymLinks
+ RewriteEngine On
+ Redirect 301 https://iren-art.ru/proizvedeniya/portret http://http://fr796593.bget.ru/proizvedeniya/portret

@@ -2,5 +2,6 @@ User-Agent: *
 Disallow: 
 Disallow: /img/colors
 Disallow: /img/icons
+Disallow: /404.html
 
 Sitemap: https://iren-art.ru/sitemap.xml

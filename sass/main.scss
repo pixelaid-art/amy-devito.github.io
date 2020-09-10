@@ -90,7 +90,7 @@ body {
 	color: #fff;
 	letter-spacing: 0.4px;
 	min-height: 100vh;
-	background: rgba(43, 45, 44, 1.0);
+	background: rgba(43, 45, 44, 1);
 	background: -moz-linear-gradient(top, rgba(43, 45, 44, 1) 0%, rgba(0, 0, 0, 1) 100%);
 	background: -webkit-gradient(
 		left top,
@@ -442,17 +442,20 @@ p {
 .banner {
 	@extend %pos-relative;
 	min-height: 125px;
+	img {
+		position: absolute;
+	}
 	&__title {
 		position: absolute;
 		top: 15%;
-		right: 10%;
+		right: 5%;
 		line-height: 1;
 		@include adaptiv-font(60, 30);
 		font-family: "Marck Script", cursive;
-		margin-left: auto;
 		max-width: 45%;
 		color: #efd320;
 		text-shadow: -1px 1px 1px rgba(2, 2, 2, 1);
+		margin: 15px 0 0 auto;
 	}
 }
 .about {
@@ -898,13 +901,6 @@ p {
 }
 .hamburger--3dy.is-active .hamburger-inner::after {
 	transform: translate3d(0, -10px, 0) rotate(-45deg);
-}
-
-.wrap-body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	justify-content: space-between;
 }
 
 @import "media.scss";

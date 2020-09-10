@@ -1,0 +1,249 @@
+* {
+	outline: none !important;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: rgba(43, 45, 44, 1);
+	color: #fff;
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	line-height: 1.8;
+}
+.wrap-body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.wrap-body__image-bg {
+	background-size: contain;
+	position: relative;
+	width: 100%;
+	background: url(../img/404/bg.jpg) no-repeat center center;
+	min-height: 60vh;
+}
+
+.wrap-body__image-bg:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	background: rgba(255, 0, 102, 1);
+	background: -moz-linear-gradient(left, rgba(255, 0, 102, 1) 0%, rgba(255, 222, 0, 1) 100%);
+	background: -webkit-gradient(
+		left top,
+		right top,
+		color-stop(0%, rgba(255, 0, 102, 1)),
+		color-stop(100%, rgba(255, 222, 0, 1))
+	);
+	background: -webkit-linear-gradient(left, rgba(255, 0, 102, 1) 0%, rgba(255, 222, 0, 1) 100%);
+	background: -o-linear-gradient(left, rgba(255, 0, 102, 1) 0%, rgba(255, 222, 0, 1) 100%);
+	background: -ms-linear-gradient(left, rgba(255, 0, 102, 1) 0%, rgba(255, 222, 0, 1) 100%);
+	background: linear-gradient(to right, rgba(255, 0, 102, 1) 0%, rgba(255, 222, 0, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0066', endColorstr='#ffde00', GradientType=1 );
+}
+.wrap-body__image {
+	position: absolute;
+	top: 25px;
+	right: 0;
+	bottom: 25px;
+	left: 0;
+	background: url(../img/404/light.png) no-repeat center bottom;
+	background-size: contain;
+	transition: all 0.3s;
+	width: 90%;
+	margin: 0 auto;
+	min-height: 50vh;
+}
+.wrap-body__image:hover {
+	background: url(../img/404/dark.png) no-repeat center bottom;
+	background-size: contain;
+}
+.wrap-body__title {
+	margin: 40px 0;
+	padding: 0 15px;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.wrap-body__link {
+	position: relative;
+}
+
+.wrap-body__logo {
+	margin: 30px auto 50px;
+	position: relative;
+	max-width: 90px;
+}
+
+a {
+	display: flex;
+	background: #000;
+	border: 1px #ffae16 solid;
+	padding: 8px 40px;
+	border-radius: 10px;
+	transition: all 0.3s;
+}
+a:hover {
+	background: #090207;
+}
+p {
+	padding: 0 15px;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	justify-content: space-between;
+	width: 100%;
+	z-index: -1;
+}
+li {
+	position: static;
+	list-style: none;
+	display: flex;
+}
+#right,
+#up,
+#left,
+#down {
+	align-self: center;
+}
+#right {
+	flex-direction: row;
+}
+
+#left {
+	flex-direction: row-reverse;
+}
+.reh,
+.leh {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	box-shadow: 5px -5px #f6772c;
+	border-radius: 1px;
+}
+
+.reh {
+	transform: rotate(45deg);
+}
+.leh {
+	transform: rotate(-135deg);
+}
+.m1 {
+	animation: ani3 1s steps(5, start) infinite;
+	-webkit-animation: ani3 1s steps(5, start) infinite;
+}
+.m2 {
+	animation: ani2 1s steps(5, start) infinite;
+	-webkit-animation: ani2 1s steps(5, start) infinite;
+}
+.m3 {
+	animation: ani1 1s steps(5, start) infinite;
+	-webkit-animation: ani1 1s steps(5, start) infinite;
+}
+@keyframes ani1 {
+	0% {
+		opacity: 0.1;
+	}
+	11% {
+		opacity: 0.1;
+	}
+	22% {
+		opacity: 0.1;
+	}
+	33% {
+		opacity: 0.15;
+	}
+	44% {
+		opacity: 0.25;
+	}
+	55% {
+		opacity: 0.5;
+	}
+	66% {
+		opacity: 1;
+	}
+	77% {
+		opacity: 0.5;
+	}
+	88% {
+		opacity: 0.25;
+	}
+	100% {
+		opacity: 0.15;
+	}
+}
+@keyframes ani2 {
+	0% {
+		opacity: 0.1;
+	}
+	11% {
+		opacity: 0.15;
+	}
+	22% {
+		opacity: 0.25;
+	}
+	33% {
+		opacity: 0.5;
+	}
+	44% {
+		opacity: 1;
+	}
+	55% {
+		opacity: 0.5;
+	}
+	66% {
+		opacity: 0.25;
+	}
+	77% {
+		opacity: 0.15;
+	}
+	88% {
+		opacity: 0.1;
+	}
+	100% {
+		opacity: 0.1;
+	}
+}
+@keyframes ani3 {
+	0% {
+		opacity: 0.25;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	22% {
+		opacity: 1;
+	}
+	33% {
+		opacity: 0.5;
+	}
+	44% {
+		opacity: 0.25;
+	}
+	55% {
+		opacity: 0.15;
+	}
+	66% {
+		opacity: 0.1;
+	}
+	77% {
+		opacity: 0.1;
+	}
+	88% {
+		opacity: 0.1;
+	}
+	100% {
+		opacity: 0.15;
+	}
+}

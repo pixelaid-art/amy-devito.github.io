@@ -133,8 +133,16 @@
 		margin: 7px 20px;
 	}
 }
+@media (min-width: 576px) {
+	.banner {
+		padding-bottom: 40.26%;
+	}
+}
 
 @media (max-width: 575px) {
+	.banner {
+		padding-bottom: 67.47%;
+	}
 	.banner__title {
 		right: 0;
 	}

@@ -54,7 +54,7 @@ body {
 	left: 0;
 	background: url(../img/404/light.png) no-repeat center bottom;
 	background-size: contain;
-	transition: all 0.3s;
+	transition: all 0.5s;
 	width: 90%;
 	margin: 0 auto;
 	min-height: 50vh;

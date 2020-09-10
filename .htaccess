@@ -127,4 +127,5 @@
 
  Options +FollowSymLinks
  RewriteEngine On
- Redirect 301 https://iren-art.ru/proizvedeniya/portret http://fr796593.bget.ru/proizvedeniya/portret
+	RewriteCond %{REQUEST_URI} ^/proizvedeniya/portret/$
+	RewriteRule ^.*$ http://fr796593.bget.ru/proizvedeniya/portret? [R=301,L]

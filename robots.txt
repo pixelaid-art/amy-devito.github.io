@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: 
+Disallow: /404
+Disallow: /img/colors
+Disallow: /img/icons
+
+Sitemap: https://iren-art.ru/sitemap.xml

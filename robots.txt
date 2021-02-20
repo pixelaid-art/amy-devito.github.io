@@ -4,4 +4,5 @@ Disallow: /img/colors
 Disallow: /img/icons
 Disallow: /404.html
 
+Host: https://iren-art.ru
 Sitemap: https://iren-art.ru/sitemap.xml
